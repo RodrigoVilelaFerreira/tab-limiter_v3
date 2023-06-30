@@ -15,7 +15,7 @@ const totalRemaining = options =>
 
 const updateBadge = options => {
 	if (!options.displayBadge) {
-		browser.browserAction.setBadgeText({ text: "" })
+		browser.action.setBadgeText({ text: "" })
 		return;
 	}
 
@@ -23,7 +23,7 @@ const updateBadge = options => {
 	.then(remaining => {
 		// console.log(remaining)
 		// remaining = [remainingInWindow, remainingInTotal]
-		browser.browserAction.setBadgeText({
+		browser.action.setBadgeText({
 			text: Math.min(...remaining).toString()
 		})
 	})
@@ -104,7 +104,13 @@ const displayAlert = (options, place) => new Promise((res, rej) => {
 		/{\s*(\S+)\s*}/g,
 		replacer
 	)
-	alert(renderedMessage);
+	chrome.notifications.create({
+		type: 'progress',
+		iconUrl: '/icons/48.png',
+		title: `Limite de abas`,
+		message: "Não é permitido abrir mais de 5 abas no chrome",
+		priority: 1
+		});
 })
 
 let tabCount = -1
