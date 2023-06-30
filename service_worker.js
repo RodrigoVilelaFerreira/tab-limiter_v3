@@ -105,7 +105,7 @@ const displayAlert = (options, place) => new Promise((res, rej) => {
 		replacer
 	)
 	chrome.notifications.create({
-		type: 'progress',
+		type: 'basic',
 		iconUrl: '/icons/48.png',
 		title: `Limite de abas`,
 		message: "Não é permitido abrir mais de 5 abas no chrome",
