@@ -101,14 +101,13 @@ const displayAlert = (options, place) => new Promise((res, rej) => {
 	};
 
 	const renderedMessage = options.alertMessage.replace(
-		/{\s*(\S+)\s*}/g,
-		replacer
-	)
+		/{\s*(\S+)\s*}/g, replacer)
+		
 	chrome.notifications.create({
 		type: 'basic',
 		iconUrl: '/icons/48.png',
 		title: `Limite de abas`,
-		message: "Não é permitido abrir mais de 5 abas no chrome",
+		message: "Não é permitido abrir mais de 10 abas",
 		priority: 1
 		});
 })
@@ -188,8 +187,8 @@ const app = {
 	init: function() {
 		browser.storage.sync.set({
 			defaultOptions: {
-				maxTotal: 5,
-				maxWindow: 5,
+				maxTotal: 10,
+				maxWindow: 10,
 				exceedTabNewWindow: false,
 				displayAlert: true,
 				countPinnedTabs: false,

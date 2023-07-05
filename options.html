@@ -11,7 +11,7 @@
 <body>
 	<h1>Alerta!</h1>
 	<div id="options">
-		<p>Só é permitido abrir 5 abas simultaneas no Chrome</p>
+		<p>Só é permitido abrir 10 abas simultâneas</p>
 		<button>Ok</button>
 		<!-- <input id="maxTotal" type="number" min="1" max="1337">
 		<label for="maxTotal">Max. total tabs</label>
@@ -38,24 +38,26 @@
 
 	<input id="info" type="checkbox">
 	<label for="info">{Placeholders}</label> -->
-	<div class="container">
-		<p>You can use <code>{<em>name</em>}</code> syntax for placeholders in the alert box message.</p>
-		<dl>
-			<dt>{place}</dt>
-			<dd>"one window" or "total", depending on where there were too many tabs. If both, uses "total".</dd>
-			<dt>{maxPlace}</dt>
-			<dd>maxTotal or maxWindow, depending on where there were too many tabs. If both, uses "total".</dd>
+		<div class="container">
+			<p>You can use <code>{<em>name</em>}</code> syntax for placeholders in the alert box message.</p>
+			<dl>
+				<dt>{place}</dt>
+				<dd>"one window" or "total", depending on where there were too many tabs. If both, uses "total".</dd>
+				<dt>{maxPlace}</dt>
+				<dd>maxTotal or maxWindow, depending on where there were too many tabs. If both, uses "total".</dd>
 
-			<dt>{maxTotal}</dt>
-			<dd>Max. number of total tabs</dd>
-			<dt>{maxWindow}</dt>
-			<dd>Max. number of tabs in one window</dd>
-		</dl>
-	</div>
+				<dt>{maxTotal}</dt>
+				<dd>Max. number of total tabs</dd>
+				<dt>{maxWindow}</dt>
+				<dd>Max. number of tabs in one window</dd>
+			</dl>
+		</div>
 
-	<!-- <p id="status">Change values to update them</p> -->
+		<!-- <p id="status">Change values to update them</p> -->
 
-	<p class="message hidden">
-		Hello everyone, welcome to version 0.3.0! See the changelog at the <a href="https://github.com/matthias-vogt/tab-limiter/releases" target="_blank">github repo</a>. Thanks for using Tab Limiter! :)
-	</p>
+		<p class="message hidden">
+			Hello everyone, welcome to version 0.3.0! See the changelog at the <a
+				href="https://github.com/matthias-vogt/tab-limiter/releases" target="_blank">github repo</a>. Thanks for
+			using Tab Limiter! :)
+		</p>
 </body>

@@ -1,7 +1,7 @@
 {
-  "name": "Limitador de Tabs",
-  "description": "Limita o número de tabs do google chrome em 5",
-  "version": "0.3.0",
+  "name": "Limitador de Tabs 10",
+  "description": "Limita o número de tabs do em 10",
+  "version": "0.10.0",
   "author": "Matthias Vogt, edição de Rodrio Ferreira",
   "homepage_url": "https://github.com/matthias-vogt/tab-limiter",
   "icons": {
@@ -12,10 +12,7 @@
   "background": {
     "service_worker": "service_worker.js"
   },
-  "permissions": [
-    "storage",
-    "notifications"
-  ],
+  "permissions": ["storage", "notifications"],
   "manifest_version": 3,
   "action": {
     "default_icon": {
