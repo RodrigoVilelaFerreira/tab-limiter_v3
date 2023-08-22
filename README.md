@@ -1,5 +1,8 @@
-# Tab Limiter
+# Tab Limiter Manifest v3
 
-![Screenshot](https://raw.githubusercontent.com/matthias-vogt/tab-limiter/master/screenshot.png)
+Extensão do navegador baseada no repositório https://github.com/matthias-vogt/tab-limiter/blob/master/background.js#L185
 
-Chrome extension to limit the number of open tabs – in total and per window.
+Modificações adicionadas: 
+- Atualizado para manifesto v3 (necessário para publicação de novas extensões na Chrome Web Store).
+- Não é permitido o usuário alterar configurações, a não ser por código fonte.
+- Limitado em até 10 abas, mesmo se abrir em uma nova janela.
